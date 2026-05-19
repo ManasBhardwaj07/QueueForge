@@ -30,7 +30,7 @@ const routeSteps = [
 
 function App() {
   const location = useLocation()
-  const apiBaseUrl = (import.meta.env.VITE_API_URL || 'http://localhost:5000').trim()
+  const apiBaseUrl = (import.meta.env.VITE_API_URL || '/api').trim()
   const savedJobId = getSavedJobId()
   const currentStepIndex = routeSteps.findIndex((step) => location.pathname.startsWith(step.path))
 
